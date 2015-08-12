@@ -1,0 +1,59 @@
+<Project>
+  <Name>Negocio</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Sin titulo</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Persona</Name>
+        <Access>Public</Access>
+        <Location left="720" top="161" />
+        <Size width="229" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">string cedula</Member>
+        <Member type="Field">string nombre</Member>
+        <Member type="Field">Fecha fecha_nac</Member>
+        <Member type="Field">Fecha fecha_contratacion</Member>
+        <Member type="Property">public string nombre { get; set; }</Member>
+        <Member type="Constructor">public Persona()</Member>
+        <Member type="Constructor">public Persona(string nombre, string cedula, Fecha fecha_nac)</Member>
+        <Member type="Property">public string cedula { get; set; }</Member>
+        <Member type="Method">public void Newethod()</Member>
+        <Member type="Method">public void toString()</Member>
+        <Member type="Property">public Fecha fecha_nac { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Fecha</Name>
+        <Access>Public</Access>
+        <Location left="279" top="176" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int dia</Member>
+        <Member type="Field">int mes</Member>
+        <Member type="Field">int annio</Member>
+        <Member type="Constructor">public Fecha()</Member>
+        <Member type="Constructor">public Fecha()</Member>
+        <Member type="Method">public void getFecha()</Member>
+        <Member type="Method">public void setFecha()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Contenedor</Name>
+        <Access>Public</Access>
+        <Location left="424" top="457" />
+        <Size width="226" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Empleado[] listaEmpleados</Member>
+        <Member type="Field">int contadorEmp</Member>
+        <Member type="Constructor">public Contenedor()</Member>
+        <Member type="Method">public void agregarEmpleado(Empleado empleado)</Member>
+        <Member type="Method">public void borrarEmpleado(string cedula)</Member>
+        <Member type="Method">public void imprimirLista()</Member>
+        <Member type="Method">public void buscarEmpleado(stringt cedula)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
