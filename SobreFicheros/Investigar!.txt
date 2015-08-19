@@ -1,0 +1,2 @@
+Librería <fstream.h>
+http://www.nebrija.es/~abustind/Informatica/MetodologiaI/Archivos.pdf
