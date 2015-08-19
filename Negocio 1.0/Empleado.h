@@ -12,7 +12,7 @@ private:
 	string cedula;
 	string nombre;
 	Fecha fecha_nac;
-
+	float salario;
 public:
 	//constructor
 	Empleado(){
@@ -38,6 +38,13 @@ public:
 		return fecha_nac;
 	}
 
+	float getSalario(){
+		return this->salario;
+	};
+
+	void setSalario(float salario){
+		this->salario = salario;
+	};
 	//setter Escritura
 	void setCed(string ced){
 		this->cedula = ced;
@@ -62,9 +69,7 @@ public:
 
 		//Concatenar
 		stringstream cadena;
-		 cadena <<"Cedula: " << getCed() << endl 
-			 << "Nombre: " << getNom() << endl
-			 << "Fecha: " << fecha_nac << endl;
+		cadena << "   " << getCed() << "       " << getNom() <<"        " <<" "<< fecha_nac << endl;
 
 		 return cadena.str();
 	}
