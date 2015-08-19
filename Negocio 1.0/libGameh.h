@@ -1,5 +1,4 @@
 #pragma once
-#include "libGameh.h";
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h>
@@ -14,6 +13,8 @@ void gotoxy(int x, int y)  // funcion que posiciona el cursos en la coordenada (
 	hCon = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorPosition(hCon, dwPos);
 }
+
+
 
 void OcultaCursor() {
 	CONSOLE_CURSOR_INFO cci = { 100, FALSE }; // El segundo miembro de la estructura indica si se muestra el cursor o no.

@@ -67,7 +67,7 @@ public:
 		/*  Encuentren ustedes támbien porqué esa linea no compila...
 			cadena << "Fecha: " << getDia<< "/" << getMes<< "/" << getAnnio<< endl;
 		*/
-		cadena << "Fecha: " <<getDia()<<"/"<<getMes()<<"/"<<getAnnio()<<endl;
+		cadena << "" <<getDia()<<"/"<<getMes()<<"/"<<getAnnio()<<endl;
 		return cadena.str();
 
 
